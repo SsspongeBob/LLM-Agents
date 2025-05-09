@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ES2016",
+    "module": "CommonJS",
+    "sourceMap": true,
+    "rootDir": ".",
+    "outDir": "./build",
     "useDefineForClassFields": true,
     "lib": [
       "ES2020",
       "DOM",
       "DOM.Iterable"
     ],
-    "module": "ESNext",
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
@@ -19,11 +22,11 @@
       ]
     },
     /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": false,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    "noEmit": false,
     "jsx": "react-jsx",
     /* Linting */
     "strict": true,
@@ -33,7 +36,7 @@
     "noImplicitAny": false,
   },
   // "include": [
-  //   "./src"
+  //   "src/**/*"
   // ],
   "exclude": [
     "node_modules",

@@ -2,9 +2,9 @@
   "compilerOptions": {
     "target": "ES2016",
     "module": "CommonJS",
-    "sourceMap": true,
-    "rootDir": ".",
-    "outDir": "./build",
+    // "sourceMap": true,
+    // "rootDir": ".",
+    // "outDir": "./build",
     "useDefineForClassFields": true,
     "lib": [
       "ES2020",
@@ -26,7 +26,7 @@
     "allowImportingTsExtensions": false,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": false,
+    "noEmit": true,
     "jsx": "react-jsx",
     /* Linting */
     "strict": true,
